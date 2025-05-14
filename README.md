@@ -1,125 +1,63 @@
-# 🔒 ADB Locker
+# 🚀 **AdBlocker for YouTube** (Undetectable & Fast Ads) 🎬
 
-ADB Locker is a lightweight tool that allows you to **remotely lock or unlock** an Android device via **ADB (Android Debug Bridge)**. It's perfect for developers, automation scripts, and anyone who wants to control their Android device's lock state from a terminal or script.
+Welcome to the **AdBlocker for YouTube**! This awesome tool speeds up your ads and makes them **undetectable** by YouTube, so you can enjoy uninterrupted content faster than ever! 🎉 Say goodbye to annoying interruptions and hello to a smoother viewing experience! 😎
 
----
+## 📂 Files Included
 
-## 🚀 Features
+- **adblocker.js** – The magic script that blocks and speeds up ads! 🚫⏩
+- **manifest.json** – The config file to upload the extension to Chrome. ⚙️
 
-- 🔐 Lock the device screen instantly
-- 🔓 Unlock the device with one command (with pre-set security disabled)
-- 🧪 Simple and script-friendly usage
-- 🖥️ Works on Windows, macOS, and Linux
+## ✨ Features
 
----
+- **Undetectable by YouTube** 🔒 – Speeding up ads means YouTube can’t detect it as an adblocker! 🎯
+- **Fast Ads** ⏩ – Ads get zapped quickly! Less waiting, more watching. ⚡
+- **Super Easy to Use** 🔑 – Just upload it to Chrome and let it work its magic. ✨
 
-## 📦 Installation
+## 🖥️ Requirements
 
-### ✅ Requirements
+- Google Chrome (or any Chromium-based browser) 🌐
+- A basic understanding of uploading extensions to Chrome. 📤
 
-- Python 3.6+
-- ADB installed and added to your system's PATH
-- USB debugging enabled on your Android device
+## 📥 How to Clone This Repository
 
-### 🧰 Install ADB
+Clone this repo to get started:
 
-**macOS (Homebrew):**
-```bash
-brew install android-platform-tools
-```
 
-**Ubuntu/Debian:**
-```bash
-sudo apt install android-tools-adb
-```
+git clone https://github.com/SyedHamood/adblocker-youtube.git
+cd adblocker-youtube
 
-**Windows:**
-- Download from the [official Android platform tools](https://developer.android.com/studio/releases/platform-tools)
-- Extract and add to your PATH
+🚀 How to Upload to Google Chrome
+Ready to block those ads? Here’s how to get it on Chrome:
 
----
+Clone the repo (see above) to your local machine. 🔽
 
-### 🔧 Clone the Repo
+Open Google Chrome and go to chrome://extensions/ 🖱️.
 
-```bash
-git clone https://github.com/your-username/adb-locker.git
-cd adb-locker
-```
+Turn on Developer Mode (top right corner). 🔧
 
-(Optional) Create a virtual environment:
+Hit the Load unpacked button. 🗂️
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+Select the folder where you cloned the repo. ✅
 
----
+And BOOM! Your extension is live and working! 🎉
 
-## 🛠️ Usage
+🏃‍♂️ How to Use
+Once the extension is installed:
 
-### 🔐 Lock the Device
+Simply open YouTube. 🎥
 
-```bash
-adb shell input keyevent 26 && adb shell input keyevent 223
-```
+Ads will play super fast and be skipped in no time! ⏳
 
-### 🔓 Unlock the Device
+Enjoy your ad-free YouTube experience! 🎶
 
-> ⚠️ Unlocking only works if no lock screen (PIN/pattern/password) is set.
+⚠️ Troubleshooting
+Adblocker not working? Reload the extension from chrome://extensions/. 🔄
 
-```bash
-adb shell input keyevent 82
-```
+Ads still showing? Clear your cache and try again! 🧹
 
----
+🤝 Contribution
+We ❤️ contributions! Found a bug? Have an idea for improvement? Open an issue or submit a pull request! 💡
 
-## 🧪 Example Python Script
+Let’s make YouTube even better together! 🚀
 
-```python
-import os
-
-def lock_device():
-    os.system("adb shell input keyevent 26 && adb shell input keyevent 223")
-
-def unlock_device():
-    os.system("adb shell input keyevent 82")
-
-# Lock the device
-lock_device()
-
-# Unlock the device (only works if no lock screen security is set)
-# unlock_device()
-```
-
----
-
-## ❗ Troubleshooting
-
-- ❌ `adb: command not found`  
-  → Make sure ADB is installed and added to your system PATH
-
-- 🔌 Device not found?  
-  → Run `adb devices` to ensure your device is connected and authorized
-
-- 🔐 Unlocking doesn’t work?  
-  → Ensure your device has no security lock set (PIN/pattern/password)
-
----
-
-## 📄 License
-
-MIT License. Do what you want, just don't blame me if you lock yourself out 😄
-
----
-
-## 💡 Future Ideas
-
-- Add support for PIN/pattern unlock via input
-- Add GUI
-- Add auto-detect for multiple devices
-
----
-
-## 👨‍💻 Author
-
-Hamood – [github.com/your-username](https://github.com/your-username)
+Disclaimer: Please remember to respect YouTube's terms of service when using this extension. ⚖️
